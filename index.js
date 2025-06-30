@@ -99,33 +99,11 @@
 // }
 
 // alert("the result is :"+result);
-let balance = parseFloat(prompt("Enter your current account balance (RWF):"));
-
-let transaction = prompt(
-  "Choose a transaction:\n1. Withdraw\n2. Deposit\n3. Check Balance"
-);
-
-switch (transaction) {
-  case "1": 
-    let withdrawAmount = parseFloat(prompt("Enter amount to withdraw (RWF):"));
-    if (withdrawAmount > balance) {
-      alert("Insufficient balance!");
-    } else {
-      balance -= withdrawAmount;
-      alert("Withdrawal successful.\nNew balance: " + balance.toFixed(2) + " RWF");
-    }
-    break;
-
-  case "2": 
-    let depositAmount = parseFloat(prompt("Enter amount to deposit (RWF):"));
-    balance += depositAmount;
-    alert("Deposit successful.\nNew balance: " + balance.toFixed(2) + " RWF");
-    break;
-
-  case "3": 
-    alert("Your current balance is: " + balance.toFixed(2) + " RWF");
-    break;
-
-  default:
-    alert("Invalid option selected. Please choose 1, 2, or 3.");
-}
+// l
+let fruits = ["apple", "orange", "plum"];
+alert(fruits[0])
+alert(fruits[1])
+alert(fruits[2])
+fruits[3]="banan"
+alert(fruits[3])
+alert(fruits.length)
